@@ -1,7 +1,6 @@
 package arraysAndStrings;
 
 public class Q1_1 {
-	//where is the rep
 	//sort the array in ASCII order
 	public static boolean isUniqueChar(String str){
 		//sort
