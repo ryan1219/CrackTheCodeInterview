@@ -28,9 +28,7 @@ public class Q1_5 {
 				count = 1;
 			}
 		}
-		if(count > 1){
-			temp.append(count);
-		}
+		temp.append(count);
 		
 		String output = temp.toString();
 		if(output.length() < str.length()){
