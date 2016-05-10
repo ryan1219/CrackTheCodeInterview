@@ -1,5 +1,7 @@
 package arraysAndStrings;
-
+/*
+ * solution from the book
+ */
 public class Q1_1 {
 	//sort the array in ASCII order
 	public static boolean isUniqueChar(String str){

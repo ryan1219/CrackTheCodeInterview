@@ -1,5 +1,6 @@
 package arraysAndStrings;
 /*
+ * Written by Yan
  * string compression
  */
 public class Q1_5 {

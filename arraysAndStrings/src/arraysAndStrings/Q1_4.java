@@ -1,5 +1,7 @@
 package arraysAndStrings;
-
+/*
+ * Written by Yan
+ */
 public class Q1_4 {
 
 	public static void main(String[] args) {

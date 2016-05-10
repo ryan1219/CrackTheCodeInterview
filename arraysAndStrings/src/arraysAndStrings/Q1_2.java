@@ -1,5 +1,6 @@
 package arraysAndStrings;
-/*
+/* 
+ * Written by Yan
  * reverse a string in java
  */
 public class Q1_2 {

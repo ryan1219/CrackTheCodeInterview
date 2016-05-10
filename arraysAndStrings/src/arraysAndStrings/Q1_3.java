@@ -1,6 +1,7 @@
 package arraysAndStrings;
 
 /*
+ * solution from the Internet
  * print out the list of permutation strings of an input string x 
  */
 public class Q1_3 {
