@@ -7,7 +7,8 @@ public class Q1_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		String a = "dog";
+		printAllPermutation(a);
 
 	}
 	
@@ -33,7 +34,7 @@ public class Q1_3 {
 
 			outputString.append( in[i] );      
 			used[i] = true;       
-			doPermute( in,   outputString, used, length, level + 1 );       
+			doPermute( in,   outputString, used, inputLength, level + 1 );       
 			used[i] = false;       
 			outputString.setLength(   outputString.length() - 1 );   
 		}
