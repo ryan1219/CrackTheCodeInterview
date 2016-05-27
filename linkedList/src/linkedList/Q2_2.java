@@ -8,12 +8,22 @@ public class Q2_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		linkedList a = new linkedList();
+		a.add(1);
+		a.add(2);
+		a.add(3);
+		a.add(4);
+		a.add(5);
+		a.add(6);
+		a.add(7);
+		a.add(8);
+		//System.out.println(a.get(8));
+		System.out.println(a);
+		Node b = kthToLast(a, 3);
+		System.out.println(b);
 	}
 
-	public static linkedList kthToLast(linkedList a, int k){
-		linkedList result = new linkedList();
-		//for(,k<linkedList.size)
-		return null; 
+	public static Node kthToLast(linkedList a, int k){
+		return null;
 	}
 }
