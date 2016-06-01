@@ -1,6 +1,6 @@
 package linkedList;
 
-public class linkedList {
+public class linkedList{
 	
 	private int size;
 	public Node head;
@@ -8,6 +8,17 @@ public class linkedList {
 	public linkedList(){
 		this.size = 0;
 		this.head = null;
+	}
+	
+	public linkedList clone(){
+		linkedList copy = new linkedList();
+		Node temp = this.head;
+		
+		while(temp!= null){
+			copy.add(temp.data);
+			temp= temp.next;
+		}
+		return copy;
 	}
 	//
 	public void add(Object data){
