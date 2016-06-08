@@ -6,8 +6,6 @@ package linkedList;
  */
 public class Q2_7 {
 	
-	//Node left;
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		linkedList test = new linkedList();
@@ -21,33 +19,29 @@ public class Q2_7 {
 	}
 	
 	public static boolean isPal(linkedList input){
-		//Wrapper wrapper = new Wrapper();
-		Node left = input.head;
-		test(left);
-		System.out.println("left after "+left.data);
-		
-		return recursion(input.head, input.head);
+		Wrapper wrapper = new Wrapper();
+		wrapper.left = input.head;
+		return recursion(wrapper, input.head);
 	}
 	
 	public static void test(Node left){
 		System.out.println("inside test method "+left.data);
 	}
 	
-	public static boolean recursion(Node left, Node right){
+	public static boolean recursion(Wrapper wrapper, Node right){
 		
 		if(right == null){
 			return true;
 		}
 		
-		boolean isp = recursion(left, right.next);
-		System.out.println(left.data);	
+		boolean isp = recursion(wrapper, right.next);
 		if(isp == false){
 			return false;
 		}
 		
-		boolean isp1 = (left.data == right.data);		
+		boolean isp1 = (wrapper.left.data == right.data);		
 		
-		left = left.next;			
+		wrapper.left = wrapper.left.next;			
 		return isp1;
 	}
 
