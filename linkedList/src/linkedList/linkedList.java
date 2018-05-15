@@ -44,7 +44,8 @@ public class linkedList{
 	public int size(){
 		return size;
 	}
-	// removes the element sat the specified position
+	
+	// removes the element at the specified index position
 	public boolean remove(int index){
 		//if the index is out of range, exit
 		if(this.head == null){
