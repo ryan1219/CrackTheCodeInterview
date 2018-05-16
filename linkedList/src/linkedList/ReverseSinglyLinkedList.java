@@ -14,7 +14,7 @@ public class ReverseSinglyLinkedList {
 		a.add(8);
 		System.out.println(a);
 		System.out.println(a.head.data);
-		iterativeReverse(a);
+		recursiveReverse(a);
 		System.out.println(a);
 		System.out.println(a.head.data);
 	}
@@ -30,6 +30,24 @@ public class ReverseSinglyLinkedList {
 			current = next;
 		}
 		a.head = previous;
+	}
+	
+	public static void recursiveReverse(linkedList a){
+		reverse(a, a.head, null);
+		
+	}
+	
+	public static void reverse(linkedList a, Node current, Node previous){
+		// base case
+		if(current.next == null){
+			a.head = current;
+			current.next = previous;
+			return;
+		}
+		// recursive case
+		Node next = current.next;
+		current.next = previous;
+		reverse(a, next, current);
 	}
 
 }
