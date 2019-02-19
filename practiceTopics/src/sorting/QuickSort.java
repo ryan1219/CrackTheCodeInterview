@@ -17,7 +17,6 @@ public class QuickSort {
 		System.out.println(Arrays.toString(b));
 		quickSort2(b, 0, b.length - 1);
 		System.out.println(Arrays.toString(b));
-
 	}
 
 	/*
@@ -73,6 +72,7 @@ public class QuickSort {
 				j--;
 			}
 			if (i >= j) {
+				System.out.println("j : " + j);
 				return j;
 			}
 			swap(array, i, j);
