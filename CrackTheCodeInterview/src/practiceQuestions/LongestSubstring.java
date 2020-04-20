@@ -1,3 +1,4 @@
+package practiceQuestions;
 import java.util.HashMap;
 
 /*
