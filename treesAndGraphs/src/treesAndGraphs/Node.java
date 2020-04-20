@@ -10,6 +10,10 @@ public class Node {
 		right = null;
 		left = null;
 	}
+	
+	public String toString() {
+		return "node value: " + value;
+	}
 
 	public void print() {
 		print("", this, false);
