@@ -69,7 +69,4 @@ public class BinarySearchTree {
 	public void print() {
 		this.root.print();
 	}
-	
-	
-
 }
