@@ -1,6 +1,6 @@
 package treesAndGraphs;
 
-public class NodeHeap implements Heap {
+public class LinkedHeap implements Heap {
 
 	private HeapNode root;
 	private int size;

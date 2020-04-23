@@ -1,21 +1,20 @@
 package treesAndGraphs;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+public class BinarySearchTree {  
 
-public class BinarySearchTree {
+	protected Node root = null;
 
-	private Node root = null;
-
-	private Node addRecursive(Node current, int value) {
+	protected Node addRecursive(Node current, int value) {
 		if (current == null) {
 			return new Node(value);
 		}
 
 		if (value < current.value) {
 			current.left = addRecursive(current.left, value);
+			current.left.parent = current;
 		} else if (value > current.value) {
 			current.right = addRecursive(current.right, value);
-		} else {
-			// value already exists
-			return current;
+			current.right.parent = current;
 		}
 
 		return current;
@@ -50,12 +49,13 @@ public class BinarySearchTree {
 		reverseRecursive(current.right);
 	}
 	
-	public void add(int value) {
+	public Node add(int value) {
 		if (root == null) {
 			root = new Node(value);
 		} else {
 			root = addRecursive(this.root, value);
 		}
+		return find(value);
 	}
 	
 	public Node find(int value) {
