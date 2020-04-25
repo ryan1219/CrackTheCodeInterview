@@ -32,7 +32,7 @@ public class BalanceableBinarySearchTree extends BinarySearchTree {
 		if (x == y.left) {
 			relink(y, x.right, true);
 			relink(x, y, false);
-		} else {
+		} else {  
 			relink(y, x.left, false);
 			relink(x, y, true);
 		}
