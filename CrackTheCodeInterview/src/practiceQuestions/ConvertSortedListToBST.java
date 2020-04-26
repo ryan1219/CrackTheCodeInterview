@@ -63,19 +63,19 @@ public class ConvertSortedListToBST {
 		}
 		return values.stream().mapToInt(i -> i).toArray();
 	}
-}
+	
+	class TreeNode {
+		int value;
+		TreeNode left;
+		TreeNode right;
 
-class TreeNode {
-	int value;
-	TreeNode left;
-	TreeNode right;
-
-	public TreeNode(int value) {
-		this.value = value;
+		public TreeNode(int value) {
+			this.value = value;
+		}
 	}
-}
 
-class ListNode {
-	int val;
-	ListNode next;
+	class ListNode {
+		int val;
+		ListNode next;
+	}
 }
