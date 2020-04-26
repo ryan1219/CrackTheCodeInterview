@@ -17,8 +17,8 @@ public class SubtreeOfAnotherTree {
 	 */
 
 	public boolean isSubtree(TreeNode s, TreeNode t) {
-		List source = postorderTraversal(s);
-		List target = postorderTraversal(t);
+		List<Integer> source = postorderTraversal(s);
+		List<Integer> target = postorderTraversal(t);
 		int index = Collections.indexOfSubList(source, target);
 		return index >= 0;
 	}
