@@ -1,7 +1,5 @@
 package practiceQuestions;
 
-import java.util.Arrays;
-
 public class LongestPalindromicSubstring {
 
 	/*
