@@ -24,6 +24,8 @@ public class MaximumSubarray {
 	
 	/*
 	 * divide and conquer
+	 * 
+	 * T(n) = 2 * T(n/2) + O(n)
 	 * https://www.youtube.com/watch?v=yBCzO0FpsVc
 	 */
 	public int maxSubArray(int[] nums) {
