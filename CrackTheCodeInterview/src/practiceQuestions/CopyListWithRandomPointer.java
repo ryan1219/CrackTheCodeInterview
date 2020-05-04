@@ -8,7 +8,7 @@ public class CopyListWithRandomPointer {
 		if (head == null) {
 			return null;
 		}
-		// index, node
+
 		HashMap<Node, Node> map = new HashMap<>();
 		Node newHead = new Node(head.val);
 		map.put(head, newHead);
