@@ -46,7 +46,8 @@ public class ConstructBST {
 
 	/*
 	 * solution2: two pointers for inorder array, one pointer for postorder array
-	 * but always do right subtree first, the last element in postorder is the root of right subtree
+	 * but always do right subtree first, the last element in postorder is the root
+	 * of right subtree
 	 */
 	int postEnd;
 
@@ -63,8 +64,6 @@ public class ConstructBST {
 	}
 
 	TreeNode build(int[] inorder, int[] postorder, int inorderStart, int inorderEnd) {
-		System.out.println("inorder start: " + inorderStart + " inorder end:" + inorderEnd);
-		System.out.println(postEnd);
 		if (inorderStart > inorderEnd) {
 			return null;
 		}
