@@ -23,11 +23,11 @@ public class WordLadderII {
 			return new ArrayList<>();
 		}
 		graph = buildGraph(beginWord, endWord, wordList);
-		bfs(beginWord, endWord, wordList, ans);
+		bfs(beginWord, endWord, ans);
 		return ans;
 	}
 
-	public void bfs(String beginWord, String endWord, List<String> wordList, List<List<String>> ans) {
+	public void bfs(String beginWord, String endWord, List<List<String>> ans) {
 		// create a queue which stores the path
 		Queue<List<String>> queue = new LinkedList<>();
 		List<String> path = new ArrayList<>();
