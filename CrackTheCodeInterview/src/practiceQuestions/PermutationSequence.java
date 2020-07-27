@@ -2,6 +2,9 @@ package practiceQuestions;
 
 import java.util.LinkedList;
 
+/*
+ * https://leetcode.com/problems/permutation-sequence/
+ */
 public class PermutationSequence {
 	public String getPermutation(int n, int k) {
 		String res = "";
