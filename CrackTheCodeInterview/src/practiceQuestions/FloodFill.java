@@ -28,7 +28,6 @@ public class FloodFill {
 			int round = queue.size();
 			while (round > 0) {
 				Point p = queue.remove();
-				System.out.println("process:"+p.x+p.y);
 				// set color on p
 				image[p.x][p.y] = newColor;
 				// check four direction of point p
