@@ -1,5 +1,10 @@
 package practiceQuestions;
 
+/*
+ * question: https://leetcode.com/problems/jump-game-ii/
+ * 
+ * greedy algorithm
+ */
 public class JumpGameII {
 	public static void main(String[] args) {
 		int[] test = { 2, 3, 1, 1, 4 };
