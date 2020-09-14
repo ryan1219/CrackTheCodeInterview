@@ -1,5 +1,6 @@
 package main
 
+// question: https://leetcode.com/problems/longest-increasing-subsequence/
 func lengthOfLIS(nums []int) int {
 	space := make([]int, len(nums))
 	for i := range space {
