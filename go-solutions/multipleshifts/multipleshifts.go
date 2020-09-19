@@ -38,18 +38,18 @@ func main() {
 	// fmt.Println(findShifts(userShifts, availableCompanyShifts))
 }
 
-func findShifts(userShifts []Shift, available []Shift) []Shift {
-	selectShifts := make([]Shift, 0)
+// good use case for named return parameters, because short function, make for good documentation, code is even simpler
+func findShifts(userShifts []Shift, available []Shift) (selectedShifts []Shift) {
 	for _, shift := range available {
-		if !checkOverlap(userShifts, shift) {
-			selectShifts = append(selectShifts, shift)
+		if !isOverlap(userShifts, shift) {
+			selectedShifts = append(selectedShifts, shift)
 		}
 	}
 
-	return selectShifts
+	return
 }
 
-func checkOverlap(userShifts []Shift, shift Shift) bool {
+func isOverlap(userShifts []Shift, shift Shift) bool {
 	for _, user := range userShifts {
 		userStart, _ := strconv.Atoi(user.Start)
 		userEnd, _ := strconv.Atoi(user.End)
