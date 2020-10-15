@@ -11,3 +11,5 @@ Sliding Window Maximum
 Group Anagrams
 Min Stack
 Minimum Window Substring
+Clone Graph
+Reverse Linked List
