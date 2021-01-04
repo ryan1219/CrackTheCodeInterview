@@ -12,7 +12,7 @@ public class JobScheduler {
 		String input = "path of test file";
 		schedule(input);
 	}
-	
+
 	public static void schedule(String path) {
 		LinkedList<Value> list = buildMap(path);
 		// sort each job basing on starting time
