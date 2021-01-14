@@ -1,4 +1,4 @@
-package main
+package addTwoNumbers
 
 /**
  * Definition for singly-linked list.

@@ -23,3 +23,13 @@ Frog Jump
 Two Sum II - Input array is sorted
 Add Two Numbers
 Kth Smallest Element in a BST
+Maximal Rectangle
+Binary Tree Zigzag Level Order Traversal
+Serialize and Deserialize Binary Tree
+Top K Frequent Elements
+Search in Rotated Sorted Array
+Add Two Numbers II
+Path Sum
+Symmetric Tree
+Word Search II
+Longest Valid Parentheses
