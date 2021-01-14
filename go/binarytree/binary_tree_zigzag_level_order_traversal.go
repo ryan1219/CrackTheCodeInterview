@@ -1,4 +1,4 @@
-package main
+package binarytree
 
 // question: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 func zigzagLevelOrder(root *TreeNode) [][]int {

@@ -7,6 +7,10 @@ package main
  *     Neighbors []*Node
  * }
  */
+type Node struct {
+	Val       int
+	Neighbors []*Node
+}
 
 // question: https://leetcode.com/problems/clone-graph/
 func cloneGraph(node *Node) *Node {

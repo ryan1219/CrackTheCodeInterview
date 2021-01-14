@@ -1,4 +1,4 @@
-package main
+package binarytree
 
 /**
  * Definition for a binary tree node.

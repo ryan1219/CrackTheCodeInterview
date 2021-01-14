@@ -1,4 +1,4 @@
-package main
+package binarytree
 
 // question:
 /**
@@ -9,11 +9,6 @@ package main
  *     Right *TreeNode
  * }
  */
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
 
 func kthSmallest(root *TreeNode, k int) int {
 	list := make([]int, 0)

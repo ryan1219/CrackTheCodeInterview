@@ -1,4 +1,4 @@
-package main
+package binarytree
 
 func hasPathSum(root *TreeNode, sum int) bool {
 	result := false

@@ -1,4 +1,4 @@
-package main
+package binarytree
 
 /**
  * question: https://leetcode.com/problems/minimum-depth-of-binary-tree
@@ -33,7 +33,7 @@ func minDepth(root *TreeNode) int {
 				queue = append(queue, node.Right)
 			}
 		}
-		depth += 1
+		depth++
 	}
 	return depth
 }
@@ -66,10 +66,4 @@ func Min(x, y int) int {
 		return x
 	}
 	return y
-}
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
 }
