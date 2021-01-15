@@ -33,3 +33,6 @@ Path Sum
 Symmetric Tree
 Word Search II
 Longest Valid Parentheses
+Path Sum II
+Balanced Binary Tree
+Same Tree
