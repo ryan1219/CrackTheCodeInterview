@@ -23,7 +23,7 @@ Frog Jump
 Two Sum II - Input array is sorted
 Add Two Numbers
 Kth Smallest Element in a BST
-*Maximal Rectangle
+Maximal Rectangle
 Binary Tree Zigzag Level Order Traversal
 Serialize and Deserialize Binary Tree
 Top K Frequent Elements
@@ -37,7 +37,7 @@ Path Sum II
 Balanced Binary Tree
 Same Tree
 *Max Points on a Line
-*Combination Sum
+Combination Sum
 Delete Node in a BST
 Encode and Decode TinyURL
 Substring with Concatenation of All Words
