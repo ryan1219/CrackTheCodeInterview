@@ -2,6 +2,8 @@
 Binary Tree Longest Consecutive Sequence
 Permutation Sequence
 Flood Fill
+Longest Common Subsequence
+Longest Common Substring
 
 ### Go
 Longest Increasing Subsequence
