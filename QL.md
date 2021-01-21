@@ -42,3 +42,6 @@ Delete Node in a BST
 Encode and Decode TinyURL
 Substring with Concatenation of All Words
 Diagonal Traverse
+*Regular Expression Matching
+*Interleaving String
+Populating Next Right Pointers in Each Node II
