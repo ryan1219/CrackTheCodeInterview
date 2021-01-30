@@ -51,5 +51,7 @@ Reconstruct Itinerary
 Candy
 4Sum
 Subsets II
-*Shortest Distance from All Buildings
+*317 Shortest Distance from All Buildings
+*286 Walls and Gates
+Different Ways to Add Parentheses
 Path Sum III
