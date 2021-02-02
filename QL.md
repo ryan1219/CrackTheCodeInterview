@@ -54,4 +54,9 @@ Subsets II
 *317 Shortest Distance from All Buildings
 *286 Walls and Gates
 Different Ways to Add Parentheses
+Basic Calculator II
+*529. Minesweeper
+Longest Substring with At Least K Repeating Characters
+Rotate Array
+Word Pattern
 Path Sum III
