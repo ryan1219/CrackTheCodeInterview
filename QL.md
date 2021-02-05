@@ -60,4 +60,5 @@ Longest Substring with At Least K Repeating Characters
 Rotate Array
 Word Pattern
 Number of Provinces
+Maximum Gap
 Path Sum III
