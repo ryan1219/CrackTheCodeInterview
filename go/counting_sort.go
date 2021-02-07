@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+/*
+k - maximum value
+n - number of value
+
+if k < n^2, counting sort can run in O(n+k)
+if k > n^2, counting sort is O(n^2)
+*/
 func countingSort(input []int) []int {
 	max := input[0]
 

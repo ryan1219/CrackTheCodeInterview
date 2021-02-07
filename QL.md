@@ -61,4 +61,6 @@ Rotate Array
 Word Pattern
 Number of Provinces
 Maximum Gap
+Combination Sum II
+Reorganize String
 Path Sum III
