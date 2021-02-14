@@ -1,7 +1,6 @@
 package main
 
 // question: https://leetcode.com/problems/knight-probability-in-chessboard/
-// recursive solution
 var directions = [][]int{{-2, -1}, {-1, -2}, {1, -2}, {2, -1}, {2, 1}, {1, 2}, {-1, 2}, {-2, 1}}
 
 func knightProbability(N int, K int, r int, c int) float64 {
@@ -43,6 +42,7 @@ func knightProbability(N int, K int, r int, c int) float64 {
 	return res
 }
 
+// recursive solution
 func knightProbabilityRecursive(N int, K int, r int, c int) float64 {
 	if r < 0 || r > N-1 || c < 0 || c > N-1 {
 		return 0
