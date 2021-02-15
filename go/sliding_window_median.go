@@ -1,12 +1,16 @@
 package main
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
 
-// question:
+// question: https://leetcode.com/problems/sliding-window-median/
 func medianSlidingWindow(nums []int, k int) []float64 {
 	res := make([]float64, 0)
 
-	window := nums[:k]
+	window := make([]int, k)
+	copy(window, nums[:k])
 	sort.Ints(window)
 	res = append(res, median(window))
 	for i := 0; i < len(nums)-k; i++ {
@@ -25,7 +29,7 @@ func medianSlidingWindow(nums []int, k int) []float64 {
 
 func median(nums []int) float64 {
 	if len(nums)%2 == 0 {
-		return float64((nums[len(nums)/2] + nums[len(nums)/2+1])) / 2.0
+		return float64((nums[len(nums)/2] + nums[len(nums)/2-1])) / 2.0
 	}
 
 	return float64(nums[len(nums)/2])
@@ -53,4 +57,11 @@ func removeValue(slice []int, s int) []int {
 		return slice[:index]
 	}
 	return append(slice[:index], slice[index+1:]...)
+}
+
+func main() {
+	fmt.Println(medianSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
+	fmt.Println(medianSlidingWindow([]int{1, 4, 2, 3}, 4))
+	// input := []int{-1, 1, 3}
+	// fmt.Println(removeValue(input, 1))
 }
