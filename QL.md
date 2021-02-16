@@ -68,3 +68,4 @@ Find All Duplicates in an Array
 Path Sum III
 Knight Probability in Chessboard
 Sliding Window Median
+Design HashMap
