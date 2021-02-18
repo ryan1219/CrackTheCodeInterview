@@ -70,3 +70,4 @@ Knight Probability in Chessboard
 Sliding Window Median
 Design HashMap
 Bus Routes
+Valid Triangle Number
