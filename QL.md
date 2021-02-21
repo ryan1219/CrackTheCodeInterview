@@ -72,3 +72,5 @@ Design HashMap
 Bus Routes
 Valid Triangle Number
 Maximum Binary Tree
+Unique Email Addresses
+Reorder Data in Log Files
