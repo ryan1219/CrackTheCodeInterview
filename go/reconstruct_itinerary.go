@@ -29,7 +29,7 @@ while exists unvisited nodes do
     visit(n)
 
 function visit(node n)
-    if n has a permanent mark then
+    if n has a visited mark then
         return
 
     for each node m with an edge from n to m do
