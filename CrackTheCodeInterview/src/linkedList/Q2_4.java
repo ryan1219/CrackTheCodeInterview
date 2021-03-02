@@ -17,45 +17,46 @@ public class Q2_4 {
 		a.add(6);
 		a.add(7);
 		a.add(8);
-		//System.out.println(a.get(8));
-		//linkedList b = a.clone();
+		// System.out.println(a.get(8));
+		// linkedList b = a.clone();
 		a.head.data = 9;
-		//b.head.data = 9;
-		//System.out.println("b is " +b);
-		System.out.println("a is " +a);
-		System.out.println("partition a with 4 "+ partition(a,4));
+		// b.head.data = 9;
+		// System.out.println("b is " +b);
+		System.out.println("a is " + a);
+		System.out.println("partition a with 4 " + partition(a, 4));
 	}
-	public static linkedList partition(linkedList input, int value){
+
+	public static linkedList partition(linkedList input, int value) {
 		linkedList p1 = new linkedList();
 		linkedList p2 = new linkedList();
 		Node temp = input.head;
-		while(temp != null){
-			if((int)temp.data >= value){
+		while (temp != null) {
+			if ((int) temp.data >= value) {
 				p2.add(temp.data);
-			}
-			else{
+			} else {
 				p1.add(temp.data);
 			}
-			temp= temp.next;
+			temp = temp.next;
 		}
-		
+
 		return merge(p1, p2);
 	}
-	public static linkedList merge(linkedList a, linkedList b){
-		
-		//System.out.println("temp data is" + temp.data);
-		if(b.head == null){
+
+	public static linkedList merge(linkedList a, linkedList b) {
+
+		// System.out.println("temp data is" + temp.data);
+		if (b.head == null) {
 			return a;
 		}
-		
-		if(a.head == null){
+
+		if (a.head == null) {
 			a = b.clone();
 			return a;
 		}
 		Node temp = a.head;
-		//System.out.println("a.head is "+ a.head.data);
-		//System.out.println("temp data is" + temp.data);
-		while(temp.next != null){
+		// System.out.println("a.head is "+ a.head.data);
+		// System.out.println("temp data is" + temp.data);
+		while (temp.next != null) {
 			temp = temp.next;
 		}
 		temp.next = b.head;

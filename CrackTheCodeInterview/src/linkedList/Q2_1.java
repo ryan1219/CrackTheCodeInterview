@@ -1,7 +1,7 @@
 package linkedList;
 
 public class Q2_1 {
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		linkedList a = new linkedList();
@@ -13,17 +13,18 @@ public class Q2_1 {
 		a.add(8);
 		a.add(8);
 		a.add(8);
-		//System.out.println(a.get(8));
+		// System.out.println(a.get(8));
 		System.out.println(a);
 		System.out.println(a.size());
-		a=removeDuplicates(a);
+		a = removeDuplicates(a);
 		System.out.println(a);
 		System.out.println(a.size());
 	}
-	public static linkedList removeDuplicates(linkedList a){
-		for(int i = 0; i < a.size(); i++){
-			for(int j = i+1; j <a.size();j++){
-				if(a.get(i).equals(a.get(j))){
+
+	public static linkedList removeDuplicates(linkedList a) {
+		for (int i = 0; i < a.size(); i++) {
+			for (int j = i + 1; j < a.size(); j++) {
+				if (a.get(i).equals(a.get(j))) {
 					a.remove(j);
 					j = i;
 				}
