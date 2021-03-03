@@ -32,30 +32,26 @@ public class BalanceableBinarySearchTree extends BinarySearchTree {
 		if (x == y.left) {
 			relink(y, x.right, true);
 			relink(x, y, false);
-		} else {  
+		} else {
 			relink(y, x.left, false);
 			relink(x, y, true);
 		}
 	}
-	
+
 	/*
-	 * four types of rotation: left left, right right, left right, right left
-	 *       z         z
-	 *      /         /
-	 *     y         y
-	 *    /           \
-	 *   x             x
+	 * four types of rotation: left left, right right, left right, right left z z /
+	 * / y y / \ x x
 	 */
 	public void restructure(Node x) {
 		Node y = x.parent;
 		Node z = y.parent;
-		
-		if((x == y.left && y == z.left) || (x == y.right && y == z.right) ) {
+
+		if ((x == y.left && y == z.left) || (x == y.right && y == z.right)) {
 			rotate(y);
-		}else {
+		} else {
 			rotate(x);
 			rotate(x);
 		}
 	}
-	
+
 }

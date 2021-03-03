@@ -5,7 +5,7 @@ public class HeapNode {
 	HeapNode left;
 	HeapNode right;
 	HeapNode parent;
-	
+
 	HeapNode(int value) {
 		this.value = value;
 		this.left = null;

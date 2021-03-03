@@ -1,6 +1,6 @@
 package treesAndGraphs;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-public class BinarySearchTree {  
+
+public class BinarySearchTree {
 
 	protected Node root = null;
 
@@ -37,18 +37,18 @@ public class BinarySearchTree {
 	}
 
 	private void reverseRecursive(Node current) {
-		if(current == null) {
+		if (current == null) {
 			return;
 		}
-		
+
 		Node temp = current.left;
 		current.left = current.right;
 		current.right = temp;
-		
+
 		reverseRecursive(current.left);
 		reverseRecursive(current.right);
 	}
-	
+
 	public Node add(int value) {
 		if (root == null) {
 			root = new Node(value);
@@ -57,15 +57,15 @@ public class BinarySearchTree {
 		}
 		return find(value);
 	}
-	
+
 	public Node find(int value) {
 		return findRecursive(this.root, value);
 	}
-	
+
 	public void reverse() {
 		reverseRecursive(this.root);
 	}
-	
+
 	public void print() {
 		this.root.print();
 	}

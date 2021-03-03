@@ -40,9 +40,9 @@ public class LinkedHeap implements Heap {
 
 	private void removeLast() {
 		HeapNode last = getLastNode();
-		if(last.parent.left == last) {
+		if (last.parent.left == last) {
 			last.parent.left = null;
-		}else {
+		} else {
 			last.parent.right = null;
 		}
 		last.parent = null;

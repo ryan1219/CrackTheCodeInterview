@@ -69,24 +69,24 @@ public class TwitterTest {
 		for (int i = 0; i < commands.size(); i++) {
 			List<Integer> input = inputs.get(i);
 			switch (commands.get(i)) {
-			case "Twitter":
-				outputList.add("null");
-				break;
-			case "postTweet":
-				twitter.postTweet(input.get(0), input.get(1));
-				outputList.add("null");
-				break;
-			case "getNewsFeed":
-				outputList.add(twitter.getNewsFeed(input.get(0)).toString());
-				break;
-			case "unfollow":
-				twitter.unfollow(input.get(0), input.get(1));
-				outputList.add("null");
-				break;
-			case "follow":
-				twitter.follow(input.get(0), input.get(1));
-				outputList.add("null");
-				break;
+				case "Twitter":
+					outputList.add("null");
+					break;
+				case "postTweet":
+					twitter.postTweet(input.get(0), input.get(1));
+					outputList.add("null");
+					break;
+				case "getNewsFeed":
+					outputList.add(twitter.getNewsFeed(input.get(0)).toString());
+					break;
+				case "unfollow":
+					twitter.unfollow(input.get(0), input.get(1));
+					outputList.add("null");
+					break;
+				case "follow":
+					twitter.follow(input.get(0), input.get(1));
+					outputList.add("null");
+					break;
 			}
 		}
 		String output = outputList.toString().replaceAll("\\s", "");

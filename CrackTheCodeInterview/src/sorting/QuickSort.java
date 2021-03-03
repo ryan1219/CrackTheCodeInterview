@@ -6,13 +6,13 @@ public class QuickSort {
 
 	public static void main(String[] args) {
 		// test1
-//		int[] a = { 5, 1, 20, 4, 6 };
-//		System.out.println(Arrays.toString(a));
-//		quickSort1(a, 0, a.length - 1);
-//		System.out.println(Arrays.toString(a));
+		// int[] a = { 5, 1, 20, 4, 6 };
+		// System.out.println(Arrays.toString(a));
+		// quickSort1(a, 0, a.length - 1);
+		// System.out.println(Arrays.toString(a));
 
 		// test2
-//		int[] b = { 4, 7, 8, 1, 6, 5 };
+		// int[] b = { 4, 7, 8, 1, 6, 5 };
 		int[] b = { 5, 1, 20, 4, 6 };
 		System.out.println(Arrays.toString(b));
 		quickSort2(b, 0, b.length - 1);
@@ -20,9 +20,8 @@ public class QuickSort {
 	}
 
 	/*
-	 * Lomuto partition scheme chooses a pivot that is typically the last
-	 * element in the array Cormen et al. in their book Introduction to
-	 * Algorithms.
+	 * Lomuto partition scheme chooses a pivot that is typically the last element in
+	 * the array Cormen et al. in their book Introduction to Algorithms.
 	 */
 	public static void quickSort1(int[] array, int lo, int hi) {
 		if (lo < hi) {
@@ -46,8 +45,8 @@ public class QuickSort {
 	}
 
 	/*
-	 * Hoare partition scheme the pivot's final location is not necessarily at
-	 * the index that was returned
+	 * Hoare partition scheme the pivot's final location is not necessarily at the
+	 * index that was returned
 	 */
 	public static void quickSort2(int[] array, int lo, int hi) {
 		if (lo >= hi) {
@@ -60,12 +59,12 @@ public class QuickSort {
 
 	public static int partition2(int[] array, int lo, int hi) {
 		int pivot = array[(lo + hi) / 2];
-//		System.out.println(pivot);
+		// System.out.println(pivot);
 		int i = lo;
 		int j = hi;
 		while (true) {
 			while (array[i] < pivot) {
-//				System.out.println(array[i]);
+				// System.out.println(array[i]);
 				i++;
 			}
 			while (array[j] > pivot) {
