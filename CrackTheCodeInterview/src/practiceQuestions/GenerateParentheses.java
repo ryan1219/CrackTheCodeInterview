@@ -11,29 +11,30 @@ import java.util.List;
  * https://www.youtube.com/watch?v=sz1qaKt0KGQ
  */
 public class GenerateParentheses {
-	
+
 	List<String> res;
+
 	public List<String> generateParenthesis(int n) {
 		res = new ArrayList<>();
 		addParenthesis(n, n, "");
-		
+
 		return res;
 	}
-	
+
 	void addParenthesis(int open, int close, String string) {
-		if(open == 0 && close == 0) {
+		if (open == 0 && close == 0) {
 			res.add(string);
 		}
-		
-		if(close < open) {
+
+		if (close < open) {
 			return;
 		}
-		
-		if(open > 0) {			
+
+		if (open > 0) {
 			addParenthesis(open - 1, close, string + "(");
 		}
-		
-		if(close > 0) {			
+
+		if (close > 0) {
 			addParenthesis(open, close - 1, string + ")");
 		}
 	}

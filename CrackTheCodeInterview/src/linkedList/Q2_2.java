@@ -7,7 +7,6 @@ package linkedList;
 public class Q2_2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		linkedList a = new linkedList();
 		a.add(1);
 		a.add(2);

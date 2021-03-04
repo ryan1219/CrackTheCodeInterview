@@ -9,18 +9,17 @@ import java.util.Queue;
  */
 public class FloodFill {
 	public static void main(String[] args) {
-		int[][] a = {
-				{0,0,0},
-				{0,1,1}
-		};
+		int[][] a = { { 0, 0, 0 }, { 0, 1, 1 } };
 		System.out.println(Arrays.deepToString(new FloodFill().floodFill(a, 1, 1, 1)));
 	}
+
 	public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
 		Queue<Point> queue = new LinkedList<>();
 		queue.add(new Point(sr, sc));
 		int startColor = image[sr][sc];
 		// if new color is same as original color, no need to perform flood fill
-		// also visited tracking is not needed since all color same as original color will be changed
+		// also visited tracking is not needed since all color same as original color
+		// will be changed
 		if (startColor == newColor) {
 			return image;
 		}

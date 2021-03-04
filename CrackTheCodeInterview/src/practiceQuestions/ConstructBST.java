@@ -33,7 +33,7 @@ public class ConstructBST {
 			return null;
 		}
 		TreeNode node = new TreeNode(postorder[postEnd]);
-//		base case
+		// base case
 		if (inorderStart == inorderEnd) {
 			return node;
 		}

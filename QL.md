@@ -83,3 +83,4 @@ Maximum Frequency Stack
 Task Scheduler
 K Closest Points to Origin
 Flatten a Multilevel Doubly Linked List
+Squares of a Sorted Array

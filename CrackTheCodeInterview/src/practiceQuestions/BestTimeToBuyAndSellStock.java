@@ -19,9 +19,9 @@ public class BestTimeToBuyAndSellStock {
 		}
 		return ans;
 	}
-	
+
 	/*
 	 * DP
 	 */
-	
+
 }

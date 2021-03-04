@@ -9,7 +9,7 @@ public class BipartiteGraph {
 		}
 		int[] seen = new int[graph.length];
 		for (int j = 0; j < graph.length; j++) {
-			if(seen[j] != 0) {
+			if (seen[j] != 0) {
 				continue;
 			}
 			// 0 not seen, 1 red, -1 black

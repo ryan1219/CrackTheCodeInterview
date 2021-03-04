@@ -40,7 +40,7 @@ public class ConvertSortedListToBST {
 		// Recursively form BST on the two halves
 		node.left = convertListToBST(a, left, mid - 1);
 		node.right = convertListToBST(a, mid + 1, right);
-		
+
 		// subtree root at node is built return
 		return node;
 	}
@@ -63,7 +63,7 @@ public class ConvertSortedListToBST {
 		}
 		return values.stream().mapToInt(i -> i).toArray();
 	}
-	
+
 	class TreeNode {
 		int value;
 		TreeNode left;

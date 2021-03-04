@@ -44,8 +44,8 @@ public class KnapsackProblem {
 	 * 
 	 * i = item w = maxWeight
 	 * 
-	 * v[i][w] = max(v[i-1][w], value i + v[i-1][w - weight i]) if w > weight i
-	 *      or = v[i-1][w]
+	 * v[i][w] = max(v[i-1][w], value i + v[i-1][w - weight i]) if w > weight i or =
+	 * v[i-1][w]
 	 * 
 	 * base case if i = 0 or w = 0 v[i][w] = 0
 	 */
