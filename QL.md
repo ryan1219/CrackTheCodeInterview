@@ -88,3 +88,4 @@ Unique Paths III
 Fruit Into Baskets
 Minimum Cost For Tickets
 Subarrays with K Different Integers
+Integer Replacement
