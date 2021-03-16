@@ -89,3 +89,7 @@ Fruit Into Baskets
 Minimum Cost For Tickets
 Subarrays with K Different Integers
 Integer Replacement
+Rotting Oranges
+Sliding Puzzle
+Random Pick with Blacklist
+Perfect Number
