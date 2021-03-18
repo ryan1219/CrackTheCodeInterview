@@ -4,6 +4,7 @@ Permutation Sequence
 Flood Fill
 Longest Common Subsequence
 Longest Common Substring
+Vertical Order Traversal of a Binary Tree
 
 ### Go
 Longest Increasing Subsequence
@@ -93,4 +94,5 @@ Rotting Oranges
 Sliding Puzzle
 Random Pick with Blacklist
 Perfect Number
+Vertical Order Traversal of a Binary Tree
 Cousins in Binary Tree

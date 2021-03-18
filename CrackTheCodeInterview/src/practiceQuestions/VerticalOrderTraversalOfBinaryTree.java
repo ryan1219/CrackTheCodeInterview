@@ -64,18 +64,19 @@ public class VerticalOrderTraversalOfBinaryTree {
 	}
 
 	/*
-	 * solution2:
+	 * solution2: traverse the tree and build a list of Position, sort the list by
+	 * using implemented Comparable in Position
 	 */
-	class Position implements Comparable<Position>{
+	class Position implements Comparable<Position> {
 		int x;
 		int y;
 		int val;
 
 		Position(int x, int y, int val) {
-		        this.x = x;
-		        this.y = y;
-		        this.val = val;
-		    }
+			this.x = x;
+			this.y = y;
+			this.val = val;
+		}
 
 		public int compareTo(Position that) {
 			if (this.x != that.x)
