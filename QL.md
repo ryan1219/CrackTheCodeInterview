@@ -96,5 +96,6 @@ Random Pick with Blacklist
 Perfect Number
 Vertical Order Traversal of a Binary Tree
 Cousins in Binary Tree
-All O`one Data Structure
+*All O`one Data Structure
 My Calendar II
+Array Partition I
