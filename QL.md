@@ -100,3 +100,5 @@ Cousins in Binary Tree
 My Calendar II
 Array Partition I
 Find the Town Judge
+*Longest Repeating Substring
+Sum of Left Leaves
