@@ -104,3 +104,4 @@ Find the Town Judge
 Sum of Left Leaves
 Subdomain Visit Count
 Pairs of Songs With Total Durations Divisible by 60
+Next Greater Node In Linked List
