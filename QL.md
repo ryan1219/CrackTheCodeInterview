@@ -112,3 +112,6 @@ Maximum Difference Between Node and Ancestor
 Two City Scheduling
 Contiguous Array
 Binary Search Tree to Greater Sum Tree
+*Longest Duplicate Substring
+*Number of Atoms
+Remove Duplicate Letters

@@ -15,7 +15,6 @@ func heightChecker(heights []int) int {
 		for count[head] == 0 {
 			head++
 		}
-
 		if head != height {
 			unordered++
 		}
