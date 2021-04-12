@@ -116,3 +116,22 @@ Binary Search Tree to Greater Sum Tree
 *Number of Atoms
 Remove Duplicate Letters
 Interval List Intersections
+Height Checker
+560 Subarray Sum Equals K
+*1074 Number of Submatrices That Sum to Target
+938 Range Sum of BST
+*1083 Sales Analysis
+*943 Find the Shortest Superstring
+*1091 Shortest Path in Binary Matrix
+*214 Shortest Palindrome
+*358 Rearrange String k Distance Apart
+*1094 Car Pooling
+*429 N-ary Tree Level Order Traversal
+*1104 Path In Zigzag Labelled Binary Tree
+*1114 Print in Order
+*1046 Last Stone Weight
+*1122 Relative Sort Array
+*1047 Remove All Adjacent Duplicates In String
+*1155 Number of Dice Rolls With Target Sum
+*732 My Calendar III
+*1167 Minimum Cost to Connect Sticks
