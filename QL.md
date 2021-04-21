@@ -126,7 +126,7 @@ Height Checker
 *358 Rearrange String k Distance Apart
 *1094 Car Pooling
 429 N-ary Tree Level Order Traversal
-*1104 Path In Zigzag Labelled Binary Tree
+1104 Path In Zigzag Labelled Binary Tree
 *1114 Print in Order
 *1046 Last Stone Weight
 *1122 Relative Sort Array
