@@ -5,6 +5,7 @@ Flood Fill
 Longest Common Subsequence
 Longest Common Substring
 Vertical Order Traversal of a Binary Tree
+1114 Print in Order
 
 ### Go
 Longest Increasing Subsequence
@@ -127,7 +128,6 @@ Height Checker
 *1094 Car Pooling
 429 N-ary Tree Level Order Traversal
 1104 Path In Zigzag Labelled Binary Tree
-*1114 Print in Order
 *1046 Last Stone Weight
 *1122 Relative Sort Array
 *1047 Remove All Adjacent Duplicates In String
