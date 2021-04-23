@@ -128,7 +128,7 @@ Height Checker
 *1094 Car Pooling
 429 N-ary Tree Level Order Traversal
 1104 Path In Zigzag Labelled Binary Tree
-*1046 Last Stone Weight
+1046 Last Stone Weight
 *1122 Relative Sort Array
 *1047 Remove All Adjacent Duplicates In String
 *1155 Number of Dice Rolls With Target Sum
