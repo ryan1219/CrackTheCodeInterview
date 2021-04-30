@@ -123,7 +123,7 @@ Height Checker
 938 Range Sum of BST
 *943 Find the Shortest Superstring
 1091 Shortest Path in Binary Matrix
-*214 Shortest Palindrome
+214 Shortest Palindrome
 *358 Rearrange String k Distance Apart
 *1094 Car Pooling
 429 N-ary Tree Level Order Traversal
