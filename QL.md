@@ -130,6 +130,6 @@ Height Checker
 1046 Last Stone Weight
 1122 Relative Sort Array
 1047 Remove All Adjacent Duplicates In String
-*1155 Number of Dice Rolls With Target Sum
+1155 Number of Dice Rolls With Target Sum
 *732 My Calendar III
 *1167 Minimum Cost to Connect Sticks
