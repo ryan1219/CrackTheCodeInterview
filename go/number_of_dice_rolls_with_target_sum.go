@@ -1,6 +1,7 @@
 package main
 
 // question: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
+// bottom up dp solution
 func numRollsToTarget(d int, f int, target int) int {
 	mod := 1000000000 + 7
 	dp := make([][]int, d+1)
@@ -19,3 +20,12 @@ func numRollsToTarget(d int, f int, target int) int {
 
 	return dp[d][target]
 }
+
+/*
+top down recursion with memorization
+dp(d, f, target) = dp(d-1, f, target-1) + dp(d-1, f, target-2) + ... + dp(d-1, f, target-f)
+base case
+d == 0
+if target > 0, return 0
+if target == 0, return 1
+*/
