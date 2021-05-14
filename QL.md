@@ -97,11 +97,10 @@ Random Pick with Blacklist
 Perfect Number
 Vertical Order Traversal of a Binary Tree
 Cousins in Binary Tree
-*All O`one Data Structure
+432 All O`one Data Structure
 My Calendar II
 Array Partition I
 Find the Town Judge
-*Longest Repeating Substring
 Sum of Left Leaves
 Subdomain Visit Count
 Pairs of Songs With Total Durations Divisible by 60
