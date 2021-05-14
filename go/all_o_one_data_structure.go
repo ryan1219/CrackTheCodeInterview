@@ -1,81 +1,114 @@
 package main
 
+import "math"
+
 // question: https://leetcode.com/problems/all-oone-data-structure/
 /*
 to achieve O(1) for all operations: https://leetcode.com/problems/all-oone-data-structure/discuss/91383/An-accepted-JAVA-solution-detailed-explanation.(HashMap-%2B-double-linked-list)
 */
-type Node struct {
-	prev  *Node
-	next  *Node
-	value int
-	keys  map[string]int
-}
-
-func NewNode(value int, key string) Node {
-	newNode := Node{keys: make(map[string]int)}
-	newNode.value = value
-	newNode.keys[key] = 1
-
-	return newNode
-}
-
-func (this *Node) AddKey(key string) {
-	this.keys[key] = 1
-}
-
-func (this *Node) RemoveKey(key string) {
-	delete(this.keys, key)
-}
-
 type AllOne struct {
-	head   *Node
-	tail   *Node
-	keyMap map[string]*Node
+	max int
+	min int
+	// key - count
+	keyMap map[string]int
+	// count - keys
+	countMap map[int]map[string]int
 }
 
 /** Initialize your data structure here. */
 func Constructor() AllOne {
-	return AllOne{keyMap: make(map[string]*Node)}
+	return AllOne{keyMap: make(map[string]int), countMap: make(map[int]map[string]int)}
 }
 
 /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */
 func (this *AllOne) Inc(key string) {
-	_, contained := this.keyMap[key]
-	if this.tail == nil {
-		newNode := NewNode(1, key)
-		this.head = &newNode
-		this.tail = &newNode
-		this.keyMap[key] = &newNode
-	} else if !contained {
-		if this.tail.value == 1 {
-			this.tail.keys[key] = 1
-			this.keyMap[key] = this.tail
-		} else {
-			newNode := NewNode(1, key)
-			newNode.prev = this.tail
-			this.tail.next = &newNode
-			this.tail = &newNode
-			this.keyMap[key] = &newNode
-		}
+	if _, contained := this.keyMap[key]; !contained {
+		this.keyMap[key] = 1
 	} else {
-		// node := this.keyMap[key]
+		this.keyMap[key]++
+	}
 
+	// manage countMap
+	// add new count in countMap
+	if _, contained := this.countMap[this.keyMap[key]]; !contained {
+		this.countMap[this.keyMap[key]] = make(map[string]int)
+	}
+	this.countMap[this.keyMap[key]][key] = 1
+	// clean previous count in countMap
+	if _, contained := this.countMap[this.keyMap[key]-1][key]; contained {
+		delete(this.countMap[this.keyMap[key]-1], key)
+		if len(this.countMap[this.keyMap[key]-1]) == 0 {
+			delete(this.countMap, this.keyMap[key]-1)
+		}
+	}
+
+	if this.keyMap[key] > this.max {
+		this.max = this.keyMap[key]
+	}
+	if len(this.countMap[this.min]) == 0 {
+		this.min++
+	}
+	if len(this.countMap[1]) != 0 {
+		this.min = 1
 	}
 }
 
 /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */
 func (this *AllOne) Dec(key string) {
+	if _, contained := this.keyMap[key]; !contained {
+		return
+	} else {
+		this.keyMap[key]--
+	}
+	if this.keyMap[key] == 0 {
+		delete(this.keyMap, key)
+	}
 
+	// manage count map
+	// clean previous count in countMap
+	delete(this.countMap[this.keyMap[key]+1], key)
+	if len(this.countMap[this.keyMap[key]+1]) == 0 {
+		delete(this.countMap, this.keyMap[key]+1)
+	}
+	// add new count in countMap
+	if this.keyMap[key] != 0 {
+		if _, contained := this.countMap[this.keyMap[key]]; !contained {
+			this.countMap[this.keyMap[key]] = make(map[string]int)
+		}
+		this.countMap[this.keyMap[key]][key] = 1
+	}
+
+	if len(this.countMap[this.max]) == 0 {
+		this.max--
+	}
+	if this.keyMap[key] < this.min && this.keyMap[key] != 0 {
+		this.min = this.keyMap[key]
+	} else {
+		this.min = math.MaxInt64
+		for k, _ := range this.countMap {
+			if k < this.min {
+				this.min = k
+			}
+		}
+	}
 }
 
 /** Returns one of the keys with maximal value. */
 func (this *AllOne) GetMaxKey() string {
+	for k := range this.countMap[this.max] {
+		return k
+	}
 
+	return ""
 }
 
 /** Returns one of the keys with Minimal value. */
 func (this *AllOne) GetMinKey() string {
+	for k := range this.countMap[this.min] {
+		return k
+	}
 
+	return ""
 }
 
 /**
