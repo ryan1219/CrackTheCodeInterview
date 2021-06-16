@@ -5,7 +5,7 @@ Flood Fill
 Longest Common Subsequence
 Longest Common Substring
 Vertical Order Traversal of a Binary Tree
-1114 Print in Order
+1114. Print in Order
 
 ### Go
 Longest Increasing Subsequence
@@ -53,8 +53,8 @@ Reconstruct Itinerary
 Candy
 4Sum
 Subsets II
-*317 Shortest Distance from All Buildings
-*286 Walls and Gates
+*317. Shortest Distance from All Buildings
+*286. Walls and Gates
 Different Ways to Add Parentheses
 Basic Calculator II
 *529. Minesweeper
@@ -97,7 +97,7 @@ Random Pick with Blacklist
 Perfect Number
 Vertical Order Traversal of a Binary Tree
 Cousins in Binary Tree
-432 All O`one Data Structure
+432. All O`one Data Structure
 My Calendar II
 Array Partition I
 Find the Town Judge
@@ -117,22 +117,24 @@ Binary Search Tree to Greater Sum Tree
 Remove Duplicate Letters
 Interval List Intersections
 Height Checker
-560 Subarray Sum Equals K
-*1074 Number of Submatrices That Sum to Target
-938 Range Sum of BST
-*943 Find the Shortest Superstring
-1091 Shortest Path in Binary Matrix
-214 Shortest Palindrome
-1094 Car Pooling
-429 N-ary Tree Level Order Traversal
-1104 Path In Zigzag Labelled Binary Tree
-1046 Last Stone Weight
-1122 Relative Sort Array
-1047 Remove All Adjacent Duplicates In String
-1155 Number of Dice Rolls With Target Sum
-732 My Calendar III
+560. Subarray Sum Equals K
+*1074. Number of Submatrices That Sum to Target
+938. Range Sum of BST
+*943. Find the Shortest Superstring
+1091. Shortest Path in Binary Matrix
+214. Shortest Palindrome
+1094. Car Pooling
+429. N-ary Tree Level Order Traversal
+1104. Path In Zigzag Labelled Binary Tree
+1046. Last Stone Weight
+1122. Relative Sort Array
+1047. Remove All Adjacent Duplicates In String
+1155. Number of Dice Rolls With Target Sum
+732. My Calendar III
 
-11 Container With Most Water
-17 Letter Combinations of a Phone Number
-1054 Distant Barcodes
+11. Container With Most Water
+17. Letter Combinations of a Phone Number
+1054. Distant Barcodes
 Find distance between given pairs of nodes in a binary tree
+22. Generate Parentheses
+311. Sparse Matrix Multiplication
